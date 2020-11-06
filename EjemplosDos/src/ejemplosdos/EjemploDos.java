@@ -19,39 +19,50 @@ public class EjemploDos {
         // declaro las variables
         Scanner entrada = new Scanner(System.in);
         entrada.useLocale(Locale.US);
-        // 2. largo, d[0, n]
+        // 2. nombreComprador, x(30)[{a-z},{BS},{A-Z}]
+        String nombreComprador;
+        // 3. largo, d[0, n]
         double largo;
-        // 3. ancho, d[0, n]
+        // 4. ancho, d[0, n]
         double ancho;
-        // 4. area, d[0, n]
+        // 5. area, d[0, n]
         double area;
-        // 5. costoMetro, d[0, n]
+        // 6. costoMetro, d[0, n]
         double costoMetro;
-        // 6. costoTerreno, d[0, n]
+        // 7. costoTerreno, d[0, n]
         double costoTerreno;
         
+        
+        
         // pido datos por teclado - entradas
-        // 7. Escribir "Ingrese el largo del terreno"
+        // 8. Escribir "Ingrese el largo del terreno"
         System.out.println("Ingrese el largo del terreno");
-        // 8. Leer largo
+        // 9. Leer largo
         largo = entrada.nextDouble();
-        // 9. Escribir "Ingrese el ancho del terreno"
+        // 10. Escribir "Ingrese el ancho del terreno"
         System.out.println("Ingrese el ancho del terreno");
-        // 10. Leer ancho
+        // 11. Leer ancho
         ancho = entrada.nextDouble();
-        // 11. Escribir "Ingrese el costo del m2 del terreno"
+        // 12. Escribir "Ingrese el costo del m2 del terreno"
         System.out.println("Ingrese el costo del m2 del terreno");
-        // 12. Leer costoMetro
+        // 13. Leer costoMetro
         costoMetro = entrada.nextDouble();
+        
+        System.out.println("Ingresar el nombre del comprador");
+        entrada.nextLine();
+        nombreComprador = entrada.nextLine();
 
         // proceso
-        // 13. area <-- largo * ancho
+        // 14. area <-- largo * ancho
         area = largo * ancho;
-        // 14. costoTerreno <-- area * costoMetro
+        // 15. costoTerreno <-- area * costoMetro
         costoTerreno = area * costoMetro;    
         
         // salida
-        // 15. Escribir "El costo del terreno es :" + costoTerreno
-        System.out.printf("El costo del terreno es : %.2f\n", costoTerreno);
-    } // 16. Fin
+        // 16. Escribir "El costo del terreno es :" + costoTerreno
+        System.out.printf("El costo del terreno es : %.2f\n"
+                + "Nombre del comprador: %s\n", 
+                costoTerreno,
+                nombreComprador);
+    } // 17. Fin
 }
