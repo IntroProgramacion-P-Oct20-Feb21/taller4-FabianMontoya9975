@@ -72,6 +72,10 @@ public class Ejercicio7 {
         // 22. valor_con_descuento <-- suma - descuento
         valor_con_descuento = suma - descuento;
         
+        
+        /*
+        //Se puede utilizar solo el condicional if
+        
         // salida
         // 23. Si edad <30 Entonces
         if(edad <30)
@@ -86,6 +90,27 @@ public class Ejercicio7 {
             // 26. Escribir "El valor total a pagar es: " + suma
             System.out.printf("El valor total a pagar es: $%.2f\n", suma);
         // 27. FinSi
+        */
         
+        
+                            // ó
+        
+        
+        //Se puede utilizar el condicional if else
+                
+        // salida
+        // 23. Si edad <30 Entonces
+         if (edad <30) {
+             // 24. Escribir "El valor total a pagar con el 20% de descuento
+             // es: " + valor_con_descuento
+             System.out.printf("El usuario es menor a 30 años.\n"
+                    + "El valor total a pagar con el 20%% de "
+                    + "descuento es: $%.2f\n",
+                    valor_con_descuento);
+         } else { // 25. Sino
+             // 26. Escribir "El valor total a pagar es: " + suma
+             System.out.printf("El valor total a pagar es: $%.2f\n", suma);
+         } // 27. FinSi
+                        
      } // 28. Fin
 }

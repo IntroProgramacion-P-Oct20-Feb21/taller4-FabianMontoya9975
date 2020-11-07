@@ -59,6 +59,10 @@ public class Ejercicio6 {
         // 16. planilla_descuento <-- planilla - descuento
         planilla_descuento = planilla - descuento;
         
+        
+        /*
+        //Se puede utilizar solo el condicional if
+        
         // salida
         // 17. Si edad >65 Entonces
         if (edad >=65)
@@ -73,6 +77,27 @@ public class Ejercicio6 {
             // 20. Escribir "El valor de su planilla es: " + planilla
             System.out.printf("El valor de su planilla es: $%.2f\n", planilla);
         // 21. FinSi
+                */
+        
+        
+                                // ó
+        
+        
+        //Se puede utilizar el condicional if else
+        
+        // salida
+        // 17. Si edad >65 Entonces
+        if (edad >=65){
+            // 18. Escribir "El valor de su planilla con el 10% de descuento
+            // es: " + planilla_descuento
+             System.out.printf("El usuario es mayor a 65 años.\n"
+                    + "El valor de su planilla con el 10%% de "
+                    + "descuento es: $%.2f\n",
+                    planilla_descuento);       
+        } else { // 19. Sino
+            // 20. Escribir "El valor de su planilla es: " + planilla
+            System.out.printf("El valor de su planilla es: $%.2f\n", planilla);        
+        } // 21. FinSi
         
      } // 22. Fin
 }
