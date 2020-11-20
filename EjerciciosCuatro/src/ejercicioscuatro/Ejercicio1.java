@@ -43,7 +43,7 @@ public class Ejercicio1 {
         
         // proceso
         // 10. producto <-- base * altura
-        producto = base + altura;
+        producto = base * altura;
         // 11. cociente <-- producto / 2
         cociente = producto / 2;
         
